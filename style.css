@@ -19,6 +19,15 @@ form input {
     font-size: 36px;
     padding: 20px;
     width: 100%;
+    transition: background 2s, border-left 2s;
+}
+
+form input:focus {
+    background-color: #fff;
+    border-left: 2px solid #000;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
 }
 
 button.btn {
@@ -27,4 +36,24 @@ button.btn {
     color: #00f28f;
     cursor: pointer;
     font-size: 36px;
+    padding: 20px 24px;
+    transition: background 2s, color 1s;
+}
+
+button.btn:hover {
+    background: #00f28f;
+    color: #fff;
+}
+
+.comments {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0px;
+}
+
+li {
+    padding-left: 20px;
+    border-left: 2px solid #000;
+    font-size: 36px;
+    margin: 0 0 36px;
 }
